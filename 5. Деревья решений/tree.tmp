@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<x &le; 0.11<br/>samples = 100.0%<br/>value = [0.5, 0.5]<br/>class = 0>, fillcolor="#ffffff"] ;
+1 [label=<y &le; 0.4<br/>samples = 51.6%<br/>value = [0.16, 0.84]<br/>class = 1>, fillcolor="#60b0ea"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<y &le; -0.41<br/>samples = 41.1%<br/>value = [0.05, 0.95]<br/>class = 1>, fillcolor="#44a2e6"] ;
+1 -> 2 ;
+3 [label=<x &le; -0.76<br/>samples = 31.1%<br/>value = [0.01, 0.99]<br/>class = 1>, fillcolor="#3b9ee5"] ;
+2 -> 3 ;
+4 [label=<samples = 21.1%<br/>value = [0.0, 1.0]<br/>class = 1>, fillcolor="#399de5"] ;
+3 -> 4 ;
+5 [label=<samples = 10.0%<br/>value = [0.03, 0.97]<br/>class = 1>, fillcolor="#3fa0e6"] ;
+3 -> 5 ;
+6 [label=<samples = 10.0%<br/>value = [0.18, 0.82]<br/>class = 1>, fillcolor="#64b3eb"] ;
+2 -> 6 ;
+7 [label=<samples = 10.5%<br/>value = [0.61, 0.39]<br/>class = 0>, fillcolor="#f6d2b8"] ;
+1 -> 7 ;
+8 [label=<y &le; -0.15<br/>samples = 48.4%<br/>value = [0.86, 0.14]<br/>class = 0>, fillcolor="#e9965a"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<samples = 10.2%<br/>value = [0.48, 0.52]<br/>class = 1>, fillcolor="#f0f8fd"] ;
+8 -> 9 ;
+10 [label=<x &le; 0.89<br/>samples = 38.2%<br/>value = [0.96, 0.04]<br/>class = 0>, fillcolor="#e68742"] ;
+8 -> 10 ;
+11 [label=<samples = 12.9%<br/>value = [0.88, 0.12]<br/>class = 0>, fillcolor="#e89253"] ;
+10 -> 11 ;
+12 [label=<y &le; 0.9<br/>samples = 25.3%<br/>value = [1.0, 0.0]<br/>class = 0>, fillcolor="#e5823a"] ;
+10 -> 12 ;
+13 [label=<samples = 10.0%<br/>value = [0.99, 0.01]<br/>class = 0>, fillcolor="#e5823b"] ;
+12 -> 13 ;
+14 [label=<samples = 15.3%<br/>value = [1.0, 0.0]<br/>class = 0>, fillcolor="#e58139"] ;
+12 -> 14 ;
+}
